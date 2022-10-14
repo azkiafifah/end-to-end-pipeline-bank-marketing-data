@@ -1,0 +1,22 @@
+[2022-10-11 05:40:53,745] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: weekly_batch.local_to_gcs_task manual__2022-10-11T05:40:48.726616+00:00 [queued]>
+[2022-10-11 05:40:53,770] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: weekly_batch.local_to_gcs_task manual__2022-10-11T05:40:48.726616+00:00 [queued]>
+[2022-10-11 05:40:53,774] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-11 05:40:53,774] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-10-11 05:40:53,775] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-11 05:40:53,812] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): local_to_gcs_task> on 2022-10-11 05:40:48.726616+00:00
+[2022-10-11 05:40:53,819] {standard_task_runner.py:52} INFO - Started process 1884 to run task
+[2022-10-11 05:40:53,824] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'weekly_batch', 'local_to_gcs_task', 'manual__2022-10-11T05:40:48.726616+00:00', '--job-id', '75', '--raw', '--subdir', 'DAGS_FOLDER/bank_weekly_ingest_dag.py', '--cfg-path', '/tmp/tmptuela1wb', '--error-file', '/tmp/tmpzmim9r0i']
+[2022-10-11 05:40:53,825] {standard_task_runner.py:77} INFO - Job 75: Subtask local_to_gcs_task
+[2022-10-11 05:40:53,919] {logging_mixin.py:109} INFO - Running <TaskInstance: weekly_batch.local_to_gcs_task manual__2022-10-11T05:40:48.726616+00:00 [running]> on host 6caab34727ce
+[2022-10-11 05:40:53,987] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=weekly_batch
+AIRFLOW_CTX_TASK_ID=local_to_gcs_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-11T05:40:48.726616+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-10-11T05:40:48.726616+00:00
+[2022-10-11 05:40:55,919] {python.py:175} INFO - Done. Returned value was: None
+[2022-10-11 05:40:56,441] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=weekly_batch, task_id=local_to_gcs_task, execution_date=20221011T054048, start_date=20221011T054053, end_date=20221011T054056
+[2022-10-11 05:40:56,605] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-10-11 05:40:56,876] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

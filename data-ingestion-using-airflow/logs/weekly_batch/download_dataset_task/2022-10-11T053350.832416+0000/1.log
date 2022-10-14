@@ -1,0 +1,26 @@
+[2022-10-11 05:33:57,606] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: weekly_batch.download_dataset_task manual__2022-10-11T05:33:50.832416+00:00 [queued]>
+[2022-10-11 05:33:57,620] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: weekly_batch.download_dataset_task manual__2022-10-11T05:33:50.832416+00:00 [queued]>
+[2022-10-11 05:33:57,621] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-11 05:33:57,621] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-10-11 05:33:57,622] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-10-11 05:33:57,642] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): download_dataset_task> on 2022-10-11 05:33:50.832416+00:00
+[2022-10-11 05:33:57,649] {standard_task_runner.py:52} INFO - Started process 1574 to run task
+[2022-10-11 05:33:57,651] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'weekly_batch', 'download_dataset_task', 'manual__2022-10-11T05:33:50.832416+00:00', '--job-id', '71', '--raw', '--subdir', 'DAGS_FOLDER/bank_weekly_ingest_dag.py', '--cfg-path', '/tmp/tmpk5lqrcj8', '--error-file', '/tmp/tmpgt2ynu3b']
+[2022-10-11 05:33:57,653] {standard_task_runner.py:77} INFO - Job 71: Subtask download_dataset_task
+[2022-10-11 05:33:57,716] {logging_mixin.py:109} INFO - Running <TaskInstance: weekly_batch.download_dataset_task manual__2022-10-11T05:33:50.832416+00:00 [running]> on host 6caab34727ce
+[2022-10-11 05:33:57,775] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=weekly_batch
+AIRFLOW_CTX_TASK_ID=download_dataset_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-11T05:33:50.832416+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-10-11T05:33:50.832416+00:00
+[2022-10-11 05:33:57,777] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-10-11 05:33:57,778] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'curl -sSL https://storage.cloud.google.com/wfwijaya-fellowship/bank-additional-full.csv > /home/***//bank-additional-full.csv']
+[2022-10-11 05:33:57,795] {subprocess.py:85} INFO - Output:
+[2022-10-11 05:33:58,771] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-10-11 05:33:58,818] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=weekly_batch, task_id=download_dataset_task, execution_date=20221011T053350, start_date=20221011T053357, end_date=20221011T053358
+[2022-10-11 05:33:58,880] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-10-11 05:33:58,947] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
