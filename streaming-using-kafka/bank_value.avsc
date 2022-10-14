@@ -1,0 +1,35 @@
+{
+  "namespace": "com.bank",
+  "type": "record",
+  "name": "BankMarketingValue",
+  "fields": [
+    {
+      "name": "age",
+      "type": "int"
+    },
+    {
+      "name": "job",
+      "type": "string"
+    },
+    {
+      "name": "marital",
+      "type": "string"
+    },
+    {
+      "name": "education",
+      "type": "string"
+    },
+    {
+      "name": "defaultloan",
+      "type": "string"
+    },
+    {
+      "name": "housingloan",
+      "type": "string"
+    },
+    {
+      "name": "loan",
+      "type": "string"
+    }
+  ]
+}

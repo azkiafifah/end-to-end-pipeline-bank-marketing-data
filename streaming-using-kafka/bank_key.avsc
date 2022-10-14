@@ -1,0 +1,11 @@
+{
+  "namespace": "com.bank",
+  "type": "record",
+  "name": "BankMarketingKey",
+  "fields": [
+    {
+      "name": "age",
+      "type": "int"
+    }
+  ]
+}

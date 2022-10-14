@@ -1,0 +1,40 @@
+
+version: 2
+
+models:
+  - name: dim_loan
+    description: The table contains records for loan
+    columns:
+      - name: defaultloan
+        description: Has credit in default
+        tests:
+          - not_null
+      - name: housingloan
+        description: Has housing loan
+        tests:
+          - not_null
+      - name: loan
+        description: Has personal loan
+        tests:
+          - not_null
+    
+
+  - name: dim_identification
+    description: The table contains records for loan
+    columns:
+      - name: age
+        description: Age
+        tests:
+          - not_null
+      - name: job
+        description: Type of job
+        tests:
+          - not_null
+      - name: marital
+        description: Marital status
+        tests:
+          - not_null
+      - name: education
+        description: Education category
+        tests:
+          - not_null

@@ -1,0 +1,10 @@
+
+version: 2
+
+sources:
+    - name: data-fellowship-7.bank_marketing_data
+      tags: ["Source"]
+      description: "Source Table"
+      database: data-fellowship-7
+      tables:
+          - name: bank_marketing

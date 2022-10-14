@@ -1,0 +1,13 @@
+
+version: 2
+
+models:
+    - name: bank_marketing_facts
+      tags: ["Facts"]
+      description: "Facts table for bank marketing campaign historical data"
+      columns:
+          - name: id
+            description: "Code defining the bank marketing code"
+            tests:
+                - unique
+                - not_null
